@@ -4,7 +4,7 @@ A threat actor may access the user's account using a stolen or leaked valid (exi
 
 ## Example #1
 1. Threat actor sniffs network traffic and gets a session identifier
-2. Threat actor uses the same session identifier to gain unauthorized access to bob's account
+2. Threat actor uses the same session identifier to gain unauthorized access to a victim's account
 
 ## Impact
 Vary
