@@ -76,7 +76,7 @@
             <mxRectangle width="53" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k8Bg9EbcMrWQ4m4o8viG-18" value="&lt;span style=&quot;text-align: center&quot;&gt;/login&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;align=left;" parent="k8Bg9EbcMrWQ4m4o8viG-16" vertex="1">
+        <mxCell id="k8Bg9EbcMrWQ4m4o8viG-18" value="&lt;span style=&quot;text-align: center&quot;&gt;/home&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;align=left;" parent="k8Bg9EbcMrWQ4m4o8viG-16" vertex="1">
           <mxGeometry x="53" width="107" height="20" as="geometry">
             <mxRectangle width="107" height="20" as="alternateBounds" />
           </mxGeometry>
