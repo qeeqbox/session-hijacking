@@ -14,7 +14,7 @@ Open the webapp in your browser 127.0.0.1:5142
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/session-hijacking/main/content/1.png"></p>
 Use the default credentials (username: admin and password: admin) to login
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/session-hijacking/main/content/2.png"></p>
- Open the Storage tab from the developer tools to examine the requests cookies 
+Open the Storage tab in the developer tools to examine the request cookies
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/session-hijacking/main/content/3.png"></p>
 
 ## Code
