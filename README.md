@@ -1,7 +1,35 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/session-hijacking/main/content/session-hijacking.svg"></p>
 
-An application manages session identifiers insecurely, making them vulnerable to interception by threat actors. Session identifiers are essential for maintaining a user's authenticated session. If these identifiers are transmitted, stored, or handled improperly, a threat actor may capture a valid session ID through methods like network interception or session theft. If a session identifier is compromised, the threat actor could use it to impersonate the legitimate user.
+Session hijacking is a security attack where an attacker gains unauthorized access to a user's active authenticated session by obtaining or abusing a valid session identifier, such as a session cookie or authentication token. Once the attacker controls a user's session, they can impersonate the legitimate user and perform actions within the application without knowing the user's password.
 
+Session hijacking can lead to serious security consequences, including unauthorized access to sensitive information, financial fraud, account takeovers, and a loss of user trust.
+
+## How Session Hijacking Works
+1. User Authentication: A user logs into a web application. After successful authentication, the server creates a session and provides the user with a session identifier, commonly stored in a browser cookie. The browser automatically sends this session identifier with future requests, allowing the application to recognize the authenticated user.
+2. Obtaining the Session Identifier: An attacker may obtain a valid session identifier through various techniques.
+3. Using the Stolen Session: After obtaining a valid session identifier, the attacker can send requests to the web application using that identifier. The application may treat the attacker as the legitimate user because the session is valid. 
+
+## Session Hijacking Techniques
+- Cross-Site Scripting (XSS): XSS occurs when an attacker injects malicious JavaScript into a web page viewed by other users. If session cookies are not protected with the HttpOnly attribute, malicious scripts can access and steal session information. Even if cookies are protected with HttpOnly, XSS can still be dangerous because attackers may perform actions within the victim's active session.
+- Man-in-the-Middle (MitM) Attacks: A Man-in-the-Middle attack occurs when an attacker intercepts communication between a user and a web application. If the application does not use HTTPS, an attacker may capture session identifiers transmitted over the network.
+- Session Fixation: Session fixation occurs when an attacker forces a victim to use a session identifier that is already known to the attacker. After the victim authenticates, the attacker can use the known session identifier to access the user's account.
+- Weak Session Management: Poor session management practices can make session hijacking easier.
+- Malware or Browser Compromise: Malware installed on a user's device may access browser storage, session tokens, or authentication data. Attackers can then use stolen session information to impersonate the user.
+
+## Impact
+Successful session hijacking attacks can lead to:
+- Account Takeover: Attackers may gain complete access to user accounts and perform actions as the victim.
+- Data Exposure: Attackers may access confidential information stored within the user's account.
+- Financial Fraud: Attackers may carry out unauthorized purchases, transfers, or other financial actions.
+- Reputation Damage: Organizations affected by session hijacking incidents may experience financial losses, regulatory consequences, and a decline in customer trust.
+
+## Mitigation
+- Use Secure Cookie Settings.
+- Use Strong Session Identifiers.
+- Regenerate Session IDs After Authentication.
+- Implement Session Expiration and Revocation.
+  
+## Example
 Clone this current repo recursively
 ```sh
 git clone --recurse-submodules https://github.com/qeeqbox/session-hijacking
