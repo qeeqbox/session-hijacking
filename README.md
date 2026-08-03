@@ -24,11 +24,27 @@ Successful session hijacking attacks can lead to:
 - Reputation Damage: Organizations affected by session hijacking incidents may experience financial losses, regulatory consequences, and a decline in customer trust.
 
 ## Mitigation
-- Use Secure Cookie Settings.
-- Use Strong Session Identifiers.
-- Regenerate Session IDs After Authentication.
-- Implement Session Expiration and Revocation.
-  
+To prevent Session Hijacking:
+- Use Secure Cookie Settings: Configure authentication cookies with appropriate security attributes.
+    - Secure: Sends cookies only over HTTPS connections.
+    - HttpOnly: Prevents JavaScript from directly accessing cookies.
+    - SameSite: Reduces the risk of cross-site request attacks such as CSRF.
+- Use Strong Session Identifiers: Session identifiers should:
+  - Generated using cryptographically secure random number generators.
+  - Contain sufficient randomness and entropy.
+  - Never contain predictable information.
+- Regenerate Session IDs After Authentication: Applications should create a new session identifier after:
+  - User login
+  - Privilege escalation
+  - Password changes
+  - Sensitive account operations
+- Implement Session Expiration and Revocation
+  - Set reasonable session expiration times.
+  - Use idle timeouts.
+  - Invalidate sessions after logout.
+  - Allow users to view and terminate active sessions
+
+
 ## Example
 Clone this current repo recursively
 ```sh
