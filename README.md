@@ -46,7 +46,7 @@ To prevent Session Hijacking:
   - Allow users to view and terminate active sessions
 
 
-## Example
+## Session Hijacking Example
 Clone this current repo recursively
 ```sh
 git clone --recurse-submodules https://github.com/qeeqbox/session-hijacking
