@@ -1,6 +1,6 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/session-hijacking/main/content/session-hijacking.svg"></p>
 
-## Session hijacking
+## Session Hijacking
 Session hijacking is a security attack where an attacker gains unauthorized access to a user's active authenticated session by obtaining or abusing a valid session identifier, such as a session cookie or authentication token. Once the attacker controls a user's session, they can impersonate the legitimate user and perform actions within the application without knowing the user's password.
 
 Session hijacking can lead to serious security consequences, including unauthorized access to sensitive information, financial fraud, account takeovers, and a loss of user trust.
