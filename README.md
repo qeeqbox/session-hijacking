@@ -18,14 +18,12 @@ Session hijacking can lead to serious security consequences, including unauthori
 - Malware or Browser Compromise: Malware installed on a user's device may access browser storage, session tokens, or authentication data. Attackers can then use stolen session information to impersonate the user.
 
 ## Impact of Session Hijacking
-Successful session hijacking attacks can lead to:
 - Account Takeover: Attackers may gain complete access to user accounts and perform actions as the victim.
 - Data Exposure: Attackers may access confidential information stored within the user's account.
 - Financial Fraud: Attackers may carry out unauthorized purchases, transfers, or other financial actions.
 - Reputation Damage: Organizations affected by session hijacking incidents may experience financial losses, regulatory consequences, and a decline in customer trust.
 
 ## Mitigation Session Hijacking Strategies
-To prevent Session Hijacking:
 - Use Secure Cookie Settings: Configure authentication cookies with appropriate security attributes.
     - Secure: Sends cookies only over HTTPS connections.
     - HttpOnly: Prevents JavaScript from directly accessing cookies.
